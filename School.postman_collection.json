@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "3662a3ef-42b5-4a7e-9c4a-b7d9e1cddf06",
+		"name": "School",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "9954484"
+	},
+	"item": [
+		{
+			"name": "Reports",
+			"item": [
+				{
+					"name": "StudentCount",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "TeacherCount",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "CoursesCount",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "CoursesCountByType",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "StudentsByGroup",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "StudentsByCourse",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "StudentsByCourseAndAgeOlderThan",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "PeopleByCourseAndGroup",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CreateCourse",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"English\",\r\n    \"type\":\"Main\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/course"
+			},
+			"response": []
+		},
+		{
+			"name": "CreateTeacher",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": "localhost:8080/api/teacher"
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateTeacherSetCourse",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Mark\",\r\n    \"age\": 25,\r\n    \"courseName\":\"Sport\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/teacher/1"
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateTeacher",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Mark\",\r\n    \"age\": 25,\r\n    \"courseName\":\"Sport\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/teacher/1"
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteTeacher",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:8080/api/teacher/162"
+			},
+			"response": []
+		},
+		{
+			"name": "CreateStudent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "localhost:8080/api/teacher"
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateStudentSetCourse",
+			"request": {
+				"method": "PUT",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateStudent",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "localhost:8080/api/student/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Student",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
